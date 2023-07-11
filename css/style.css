@@ -169,6 +169,13 @@ nav:hover div:nth-of-type(2) {
   font-size: 1.4rem;
   margin-top: 1rem;
 }
+@media screen and (max-width:768px){
+  #landing-page .text-container p {
+  line-height: var(--p-line-height);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+}
 /*End Landing Page Style*/
 
 /*Start Features Style*/
