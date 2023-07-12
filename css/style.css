@@ -5,10 +5,12 @@ html {
 :root {
   --main-color: #10cab7;
   --secondry-color: #2c4755;
-  --phone-padding: 3rem;
+  --phone-padding: 1rem;
   --pc-padding: 6rem;
   --p-line-height: 1.8;
   --sections-color: #f6f6f6;
+  --pc-grid-columns:300px;
+  --phone-grid-columns:250px;
 }
 * {
   box-sizing: border-box;
@@ -18,13 +20,14 @@ body {
   max-width: 100vw;
   min-width: 100vw;
   width: 100vw;
+  overflow-x: hidden;
 }
 section {
-  padding: 6rem;
+  padding: var(--pc-padding);
 }
 @media screen and (max-width: 768px) {
   section {
-    padding: 3rem;
+    padding: var(--phone-padding);
   }
 }
 /*End Global Rules*/
@@ -168,9 +171,9 @@ nav:hover div:nth-of-type(2) {
   font-size: 1.4rem;
   margin-top: 1rem;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
   #landing-page .text-container {
-    width: 100%;
+    max-width: 250px;
   }
 }
 /*End Landing Page Style*/
@@ -181,8 +184,13 @@ nav:hover div:nth-of-type(2) {
 }
 #features .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
+}
+@media screen and (max-width:350px){
+  #features .container {
+    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+  }
 }
 #features .container {
   text-align: center;
@@ -207,8 +215,13 @@ nav:hover div:nth-of-type(2) {
 }
 #services .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
+}
+@media screen and (max-width:350px){
+  #services .container {
+    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+  }
 }
 #services h3 {
   font-weight: bold;
