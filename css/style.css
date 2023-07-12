@@ -432,8 +432,9 @@ footer {
   color: #fff;
   background-color: var(--secondry-color);
   height: 140px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
 }
 footer span {
