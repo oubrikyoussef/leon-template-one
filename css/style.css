@@ -1,14 +1,14 @@
 /*Start Global Rules*/
-html{
+html {
   scroll-behavior: smooth;
 }
 :root {
   --main-color: #10cab7;
   --secondry-color: #2c4755;
-  --phone-padding:3rem;
-  --pc-padding:6rem;
-  --p-line-height:1.8;
-  --sections-color:#f6f6f6;
+  --phone-padding: 3rem;
+  --pc-padding: 6rem;
+  --p-line-height: 1.8;
+  --sections-color: #f6f6f6;
 }
 * {
   box-sizing: border-box;
@@ -19,14 +19,13 @@ body {
   min-width: 100vw;
   width: 100vw;
 }
-section{
+section {
   padding: 6rem;
 }
-@media screen and (max-width:768px) {
-  section{
+@media screen and (max-width: 768px) {
+  section {
     padding: 3rem;
   }
-  
 }
 /*End Global Rules*/
 
@@ -169,12 +168,10 @@ nav:hover div:nth-of-type(2) {
   font-size: 1.4rem;
   margin-top: 1rem;
 }
-@media screen and (max-width:768px){
-  #landing-page .text-container p {
-  line-height: var(--p-line-height);
-  font-size: 1rem;
-  margin-top: 1rem;
-}
+@media screen and (max-width: 500px) {
+  #landing-page .text-container {
+    width: 100%;
+  }
 }
 /*End Landing Page Style*/
 
@@ -267,57 +264,56 @@ nav:hover div:nth-of-type(2) {
 /*End Services Style*/
 
 /*Start Portofolio Style*/
-#portofolio h3{
+#portofolio h3 {
   margin-top: 0;
 }
-#portofolio{
+#portofolio {
   background-color: var(--sections-color);
   font-size: 1.2rem;
 }
-#portofolio p{
+#portofolio p {
   line-height: 1.6;
   color: #777;
 }
-#portofolio .container{
+#portofolio .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-#portofolio .project{
+#portofolio .project {
   background-color: #fff;
-
 }
-#portofolio .image-container img{
-  width:100%;
+#portofolio .image-container img {
+  width: 100%;
 }
-#portofolio .text-container{
+#portofolio .text-container {
   padding: 0.6rem 1rem;
 }
 /*End Portofolio Style*/
-#about .container{
+#about .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#about .image-container{
+#about .image-container {
   position: relative;
   width: 250px;
 }
-#about .image-container img{
+#about .image-container img {
   width: 100%;
 }
-#about .image-container::before{
-  content: '';
+#about .image-container::before {
+  content: "";
   position: absolute;
   width: 80px;
   height: 455px;
   background-color: var(--sections-color);
-  transform: translate(-20px,-40px); 
+  transform: translate(-20px, -40px);
   z-index: -1;
   left: 0;
 }
-#about .image-container::after{
-  content: '';
+#about .image-container::after {
+  content: "";
   position: absolute;
   width: 120px;
   height: 300px;
@@ -330,9 +326,9 @@ nav:hover div:nth-of-type(2) {
   bottom: 50px;
   right: -160px;
 }
-#about hr{
+#about hr {
   width: 50%;
-  border:none;
+  border: none;
   background-color: var(--main-color);
   height: 2px;
   margin-top: 2rem;
@@ -340,88 +336,88 @@ nav:hover div:nth-of-type(2) {
   margin-left: auto;
   margin-right: auto;
 }
-#about p,#about strong{
+#about p,
+#about strong {
   line-height: var(--p-line-height);
 }
 
-#about p{
+#about p {
   color: #777;
 }
-#about .text-container{
+#about .text-container {
   flex-basis: calc(100% - 500px);
 }
-@media screen and (max-width:1035px) {
-  #about{
+@media screen and (max-width: 1035px) {
+  #about {
     text-align: center;
   }
-  #about .image-container{
+  #about .image-container {
     margin-bottom: 3rem;
   }
-  #about .image-container::after,#about .image-container::before{
+  #about .image-container::after,
+  #about .image-container::before {
     content: unset;
   }
-  #about .container{
+  #about .container {
     flex-direction: column;
   }
-  
 }
 /*End About Style*/
 
 /*Start Contact Style*/
-#contact{
+#contact {
   background-color: var(--sections-color);
 }
-#contact .container{
+#contact .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
 }
-#contact a{
+#contact a {
   text-decoration: none;
 }
-#contact .container h1{
+#contact .container h1 {
   color: var(--secondry-color);
-  margin: .6rem 0;
+  margin: 0.6rem 0;
 }
-#contact h1 a{
+#contact h1 a {
   color: var(--main-color);
 }
-#contact .container p{
+#contact .container p {
   color: #777;
 }
-#contact .social-networks{
+#contact .social-networks {
   width: fit-content;
   margin: 0 auto;
 }
-#contact .social-networks a:not(:first-child){
+#contact .social-networks a:not(:first-child) {
   margin-left: 1.5rem;
 }
-#contact .social-networks a:first-child{
+#contact .social-networks a:first-child {
   color: #1877f2;
 }
-#contact .social-networks a:nth-of-type(2){
+#contact .social-networks a:nth-of-type(2) {
   color: #0a66c2;
 }
-#contact .social-networks a:nth-of-type(3){
+#contact .social-networks a:nth-of-type(3) {
   color: #c32aa3;
 }
-#contact .social-networks a i{
+#contact .social-networks a i {
   font-size: 1.4rem;
 }
 /*End Contact Style*/
 
 /*Start Footer Style*/
-footer{
+footer {
   color: #fff;
   background-color: var(--secondry-color);
   height: 140px;
   display: grid;
   place-content: center;
   font-size: 1.2rem;
-
 }
-footer span{
+footer span {
   color: var(--main-color);
 }
 /*End Footer Style*/
