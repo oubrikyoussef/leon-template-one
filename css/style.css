@@ -5,12 +5,13 @@ html {
 :root {
   --main-color: #10cab7;
   --secondry-color: #2c4755;
-  --phone-padding: .5rem;
+  --phone-padding: 1rem;
   --pc-padding: 6rem;
   --p-line-height: 1.8;
   --sections-color: #f6f6f6;
   --pc-grid-columns:300px;
-  --phone-grid-columns:250px;
+  --phone-grid-columns:230px;
+
 }
 * {
   box-sizing: border-box;
@@ -292,6 +293,11 @@ nav:hover div:nth-of-type(2) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+}
+@media screen and (max-width:350px) {
+  #portofolio .container {
+    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+  }
 }
 #portofolio .project {
   background-color: #fff;
