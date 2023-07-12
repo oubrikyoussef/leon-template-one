@@ -5,7 +5,7 @@ html {
 :root {
   --main-color: #10cab7;
   --secondry-color: #2c4755;
-  --phone-padding: 1rem;
+  --phone-padding: .8rem;
   --pc-padding: 6rem;
   --p-line-height: 1.8;
   --sections-color: #f6f6f6;
