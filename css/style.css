@@ -165,9 +165,9 @@ nav:hover div:nth-of-type(2) {
   font-size: 1.4rem;
   margin-top: 1rem;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   #landing-page .text-container {
-    max-width: 250px;
+    width: 100%;
   }
 }
 /*End Landing Page Style*/
@@ -181,7 +181,7 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   #features .container {
     display: block;
   }
@@ -212,7 +212,7 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   #services .container {
     display: block;
   }
@@ -287,7 +287,7 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   #portofolio .container {
     display: block;
   }
