@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component solution
+# Leon Template One
 
 This is a minimalist website that I have created using the core concepts of HTML and CSS (responsive design, grid, flex, etc.).
 
@@ -12,7 +12,6 @@ This is a minimalist website that I have created using the core concepts of HTML
   - [Built with](#built-with)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -29,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://oubrikyoussef.github.io/leon-template-one/)
+- Live Site URL: [Click Here](https://oubrikyoussef.github.io/leon-template-one/)
 
 ### Built with
 
@@ -51,4 +50,3 @@ Users should be able to:
 ## Acknowledgments
 
 I would like to express my sincere gratitude and appreciation to Elzero Web School YouTube channel for being an invaluable resource throughout the process of building this website. The channel's extensive content, particularly the tutorial on a similar website, has been instrumental in guiding and inspiring me in creating this project.
-
