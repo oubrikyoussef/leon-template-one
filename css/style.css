@@ -9,9 +9,7 @@ html {
   --pc-padding: 6rem;
   --p-line-height: 1.8;
   --sections-color: #f6f6f6;
-  --pc-grid-columns:300px;
-  --phone-grid-columns:230px;
-
+  --pc-grid-columns: 300px;
 }
 * {
   box-sizing: border-box;
@@ -188,9 +186,9 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
 }
-@media screen and (max-width:350px){
+@media screen and (max-width: 350px) {
   #features .container {
-    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+    display: block;
   }
 }
 #features .container {
@@ -219,9 +217,9 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(var(--pc-grid-columns), 1fr));
   gap: 40px;
 }
-@media screen and (max-width:350px){
+@media screen and (max-width: 350px) {
   #services .container {
-    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+    display: block;
   }
 }
 #services h3 {
@@ -294,9 +292,9 @@ nav:hover div:nth-of-type(2) {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width: 350px) {
   #portofolio .container {
-    grid-template-columns: repeat(auto-fit, minmax(var(--phone-grid-columns), 1fr));
+    display: block;
   }
 }
 #portofolio .project {
