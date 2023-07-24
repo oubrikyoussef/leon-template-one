@@ -24,6 +24,11 @@ body {
 section {
   padding: var(--pc-padding);
 }
+@media screen and (max-width: 768px) {
+  section {
+    padding: var(--phone-padding);
+  }
+}
 /*End Global Rules*/
 
 /*Start Special Styles*/
